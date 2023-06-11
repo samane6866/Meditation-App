@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+   background-image: url(/images/breathpic.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input label {
+  text-align: center;
+  margin-bottom: 8px;
+  color: wheat;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input select {
+  border: none;
+  border-radius: 8px;
+  min-width: 300px;
+  padding: 8px 4px;
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(218, 150, 40);
+  opacity: 0.5;
+}
+
+.input select:focus {
+  outline: none;
+}
+
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+.circle1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 25px solid rgb(107, 109, 46);
+  opacity: 0.4;
+
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.5);
+  margin: 27px 0 75px;
+}
+
+.circle-progress {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-color: rgb(46, 94, 76);
+  border-radius: 50%;
+  transition: 4s ease all;
+  margin-bottom: 55px;
+}
+
+.circle-grow {
+  transform: scale(5.3);
+}
+
+.breaths {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: #6d1d07ce;
+  color:wheat;
+  padding: 10px;
+}
+
+.instructions {
+  text-align: center;
+  margin: 32px;
+  background-color: orange;
+  color:wheat;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.breaths-text{
+  
+  font-size: 25px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgb(49, 13, 13);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3 ese all;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(49, 13, 13);
+}
+
+.btn-inactive {
+  pointer-events: none;
+  background-color: grey;
+}
+ /* .container {
+  display: flex;
+} */
+
+.image-section {
+  flex: 1;
+}
+
+.app-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+} 
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: #9b2121e5;
+   height:100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+   background-image: url(/images/breathpic.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+    background-size:contain;
+  }
+  .input{
+    margin-top: 20px;
+  }
+  .circle1{
+    
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 20px solid rgb(107, 109, 46);
+    opacity: 0.4;
+
+  }
+  .circle-progress{
+    width: 25px;
+    height: 25px;
+  }
+  .breaths{
+    margin-top: 34px;
+  }
+}
+
